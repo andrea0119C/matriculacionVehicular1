@@ -25,11 +25,11 @@ Este proyecto en C tiene como objetivo desarrollar un sistema de matriculación 
 1. **Abrir el proyecto o los archivos:**
    - Inicia ZinjaI.
    - Ve a `Archivo > Abrir` y selecciona `main.c`.
-   - Asegúrate de que todos los archivos (`main.c`, `registroVehiculos.c`, `ingreso.c`, `bloqueo.c`, etc.) estén en la misma carpeta.
+   - Asegúrate de que todos los archivos (`main.c`, `registroVehiculos.c`, `ingreso.c`, `bloqueo.c`, etc.) estén en la misma carpeta. Abrelo como si fuera un proyecto existe, de esa manera se abren todos los archivos sin generar ningún problema.
 
 2. **Compilar el proyecto:**
    - Haz clic en el botón **"Compilar y Ejecutar"** (ícono del martillo con la flecha verde) o presiona **F9**.
-   - ZinjaI se encargará automáticamente de enlazar todos los archivos `.c` que estén en la carpeta.
+   - ZinjaI se encargará automáticamente de enlazar todos los archivos que estén en la carpeta.
 
 3. **Ejecutar el programa:**
    - Si la compilación fue exitosa, se abrirá la ventana de consola con el sistema listo para usar.
@@ -51,5 +51,11 @@ En este video te mostramos paso a paso su funcionamiento, los resultados y por q
 ## Soporte Técnico
 
 💬 **Si tienes problemas con nuestros servicios, contáctanos:**  
-📞 **Número de soporte:** +593 994832860  
-✉️ **Correo:** soporte@polidrive.com
+
+📞 **Número de soporte:**  
+- +593 994832860  
+- +593 995774029  
+- +593 998618483  
+- +593 960610460  
+
+✉️ **Correo:** [soporte@polidrive.com](mailto:soporte@polidrive.com)
