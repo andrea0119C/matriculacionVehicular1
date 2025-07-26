@@ -16,7 +16,7 @@ Este proyecto en C tiene como objetivo desarrollar un sistema de matriculación 
 ##  Tecnologías y herramientas
 - **Lenguaje:** C
 - **IDE:** [ZinjaI](http://zinjai.sourceforge.net/)
-- **Compilador integrado:** GCC/MinGW (ya viene dentro de zinjai, no es necesario instalar mas aplicaciones).
+- **Compilador integrado:** GCC/MinGW (ya viene dentro de zinjai, no es necesario instalar más aplicaciones).
 
 ---
 
