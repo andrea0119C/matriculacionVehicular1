@@ -51,8 +51,11 @@ En este video te mostramos paso a paso su funcionamiento, los resultados y por q
 ## Soporte Técnico
 
 💬 **Si tienes problemas con nuestros servicios, contáctanos:**  
-📞 **Número de soporte:** +593 994832860  
-                           +593 995774029
-                           +593 998618483
-                           +593 960610460
-✉️ **Correo:** soporte@polidrive.com
+
+📞 **Número de soporte:**  
+- +593 994832860  
+- +593 995774029  
+- +593 998618483  
+- +593 960610460  
+
+✉️ **Correo:** [soporte@polidrive.com](mailto:soporte@polidrive.com)
