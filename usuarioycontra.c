@@ -1,15 +1,15 @@
-//Librer�as est�ndar
+//Librerías estándar
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-//Declaraci�n de constantes
+//Declaración de constantes
 #define MAX_LINEA 100
 #define MAX_USUARIO 50
 #define MAX_CLAVE 50
 #define MAX_INTENTOS 3
 
-//Funcion para autentificar usuarios
+//Función para autentificar usuarios
 int autenticar(const char *usuario, const char *clave) {
 	FILE *archivo = fopen("usuarios.txt", "r");
 	if (archivo == NULL) {
@@ -37,9 +37,9 @@ int autenticar(const char *usuario, const char *clave) {
 	return 2; // Usuario no encontrado
 }
 
-//Funci�n registrar usuario
+//Función registrar usuario
 int registrar_usuario(const char *usuario, const char *clave) {
-	FILE *archivo = fopen("usuarios.txt", "a"); // Abrir en modo a�adir
+	FILE *archivo = fopen("usuarios.txt", "a"); // Abrir en modo añadir
 	if (archivo == NULL) {
 		perror("Error al abrir el archivo para registrar");
 		return 0;
@@ -65,13 +65,14 @@ int main() {
 		
 		resultado = autenticar(usuario, clave);
 		
+		//Validación de contraseña
 		if (resultado == 1) {
-			printf("Autenticaci�n exitosa. Bienvenido, %s.\n", usuario);
+			printf("Autenticación exitosa. Bienvenido, %s.\n", usuario);
 			return 0;
 		} else if (resultado == 0) {
 			printf("Clave incorrecta. Intento %d de %d.\n", ++intentos, MAX_INTENTOS);
 		} else if (resultado == 2) {
-			printf("Usuario no encontrado,�Deseas registrarte como '%s'? (s/n): ", usuario);//A�adir un nuevo usuario
+			printf("Usuario no encontrado,¿Deseas registrarte como '%s'? (s/n): ", usuario);//Añadir un nuevo usuario
 			char opcion;
 			scanf(" %c", &opcion);
 			if (opcion == 's' || opcion == 'S') {
