@@ -1,4 +1,4 @@
-//Librerias estandar
+//Libreráas estándar
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
