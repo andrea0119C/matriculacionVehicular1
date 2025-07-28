@@ -1,22 +1,22 @@
-//Librer韆s est醤dar
+//Librer铆as est谩ndar
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <conio.h>
 #include "ingreso.h"
 
-//Declaraci髇 de constantes
+//Declaraci贸n de constantes
 #define MAX_LINEA 100
 #define MAX_USUARIO 50
 #define MAX_CLAVE 50
 #define MAX_INTENTOS 3
 
-// Funci髇 para leer contrase馻 mostrando asteriscos (Windows)
+// Funci贸n para leer contrase帽a mostrando asteriscos (Windows)
 void leerContrasena(char *buffer, int max_len) {
 	int i = 0;
 	char c;
 	while (1) {
-		c = getch(); // Lee car醕ter sin mostrar en pantalla
+		c = getch(); // Lee car谩cter sin mostrar en pantalla
 		if (c == '\r' || c == '\n') { // Enter para terminar
 			buffer[i] = '\0';
 			printf("\n");
@@ -33,7 +33,7 @@ void leerContrasena(char *buffer, int max_len) {
 	}
 }
 
-//Funcion para autentificar usuarios
+//Funci贸n para autentificar usuarios
 int autenticar(const char *usuario, const char *clave) {
 	FILE *archivo = fopen("usuarios.txt", "r");
 	if (archivo == NULL) {
@@ -61,9 +61,9 @@ int autenticar(const char *usuario, const char *clave) {
 	return 2; // Usuario no encontrado
 }
 
-//Funci髇 para registrar el Usuario
+//Funci贸n para registrar el Usuario
 int registrarUsuario(const char *usuario, const char *clave) {
-	FILE *archivo = fopen("usuarios.txt", "a"); // Abrir en modo a馻dir
+	FILE *archivo = fopen("usuarios.txt", "a"); // Abrir en modo a帽adir
 	if (archivo == NULL) {
 		perror("Error al abrir el archivo para registrar");
 		return 0;
@@ -75,7 +75,7 @@ int registrarUsuario(const char *usuario, const char *clave) {
 	limpiarPantalla();
 	
 	printf("\n --------Nuevo usuario del sistema: %s--------\n", usuario); 
-	//Solicitar autenticaci髇 inmediata
+	//Solicitar autenticaci贸n inmediata
 	char usuarioIngreso[MAX_USUARIO];
 	char claveIngreso[MAX_CLAVE];
 	int intentos=0;
@@ -91,7 +91,7 @@ int registrarUsuario(const char *usuario, const char *clave) {
 		resultado = autenticar(usuarioIngreso, claveIngreso);
 		
 		if (resultado == 1){
-			printf("\n utentificaci髇 exitosa! Bienvenido de nuevo, %s. \n", usuarioIngreso);
+			printf("\n 锛宎utentificaci贸n exitosa! Bienvenido de nuevo, %s. \n", usuarioIngreso);
 			return 1;
 		} else if (resultado == 0){
 			limpiarPantalla();
@@ -104,6 +104,6 @@ int registrarUsuario(const char *usuario, const char *clave) {
 		intentos++;
 	} while(intentos< MAX_INTENTOS);
 	
-	printf("\nN鷐ero m醲imo de intentos alcanzado. \n");
+	printf("\nN煤mero m谩ximo de intentos alcanzado. \n");
 	return 0;
 }
